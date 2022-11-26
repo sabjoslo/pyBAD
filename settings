@@ -1,0 +1,16 @@
+[PATHS]
+# Stores miscellaneous files
+DRAWER = /Users/sabinasloman/git/pybad/drawer
+
+[SETTINGS]
+# Sets `nopython` parameter in `jit`-compiled functions
+NOPYTHON = false
+
+# `numpy.isclose` asks for a relative and absolute tolerance when assessing
+# approximate equality, and is sometimes called here to sanity check 
+# calculations (e.g., ensure probabilities sum to 1.). These settings let the 
+# user decide their tolerance for pathologies due to floating point errors and 
+# boundary conditions.
+# https://numpy.org/doc/stable/reference/generated/numpy.isclose.html
+rtol = 1e-8
+atol = 1e-8
